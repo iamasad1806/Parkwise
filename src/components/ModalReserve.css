@@ -1,0 +1,14 @@
+/* ModalReserved Specific CSS */
+@import '../components/globalModalStyles.css'; /* Ensure to import the global styles */
+
+.modal-content p {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-actions .button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+}

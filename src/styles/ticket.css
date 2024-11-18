@@ -1,0 +1,66 @@
+/* ticket.css */
+
+.ticket-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .ticket-date {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .ticket-body {
+    margin-bottom: 20px;
+  }
+  
+  .ticket-details {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .ticket-details p {
+    margin: 5px 0;
+  }
+  
+  .ticket-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .ticket-footer span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .ticket-footer .total-fare {
+    color: #28a745; /* Green color for total fare */
+  }
+  
+  .ticket-footer .ticket-id {
+    color: #007bff; /* Blue color for ticket ID */
+  }
+  

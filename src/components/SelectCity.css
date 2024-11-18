@@ -1,0 +1,106 @@
+/* Container for the entire selection page */
+.select-city-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0D0D0D; /* Deep black background */
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  border-radius: 15px;
+  width: 450px;
+  max-width: 100%;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 4px 20px rgba(180, 27, 225, 0.1); /* Subtle purple glow */
+}
+
+/* Title styling */
+.title {
+  font-size: 28px;
+  color: #B41BE1; /* Futuristic purple */
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 5px rgba(180, 27, 225, 0.2); /* Soft purple shadow */
+  animation: slideIn 1s ease-in-out;
+  text-align: center;
+}
+
+/* Combined container for city and location dropdowns */
+.city-location-container {
+  /* width: 100%; */
+  display: flex;
+  /* flex-direction: column; */
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Dropdown styling */
+.city-drop {
+  /* width: 100%; */
+  padding: 12px;
+  border: 1px solid #B41BE1; /* Purple border */
+  border-radius: 8px;
+  background-color: #1A1A1A; /* Dark grey background */
+  color: #E5E5E5; /* Light grey text */
+  font-size: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.city-drop:focus {
+  border-color: #7A04EB;
+  outline: none;
+  box-shadow: 0 4px 20px rgba(180, 27, 225, 0.3);
+}
+
+/* Dropdown options */
+.city-drop option {
+  background: #0D0D0D;
+  color: #B41BE1;
+}
+
+/* Button styling */
+.next-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0D0D0D; /* Dark text */
+  background-color: #B41BE1; /* Futuristic purple */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(180, 27, 225, 0.2); /* Soft purple glow */
+  margin-bottom: 15px;
+}
+
+.next-button:hover {
+  background-color: #7A04EB; /* Darker purple on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(180, 27, 225, 0.3); /* Stronger purple glow */
+}
+
+/* Fade in animation for elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in animation for title */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

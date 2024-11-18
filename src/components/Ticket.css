@@ -1,0 +1,119 @@
+/* Container for the entire ticket page */
+.ticket-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Title styling */
+.ticket-title {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Individual ticket card styling */
+.ticket-card {
+  background-color: #0D0D0D;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out;
+  transition: transform 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header of each ticket */
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Ticket status styles */
+.ticket-status {
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.ticket-status.pending {
+  background-color: #f67280;
+}
+
+.ticket-status.paid {
+  background-color: #6dd5ed;
+}
+
+/* Ticket details styling */
+.ticket-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Payment button styling */
+.pay-now-button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f67280;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.pay-now-button:hover {
+  background-color: #c06c84;
+  transform: translateY(-2px);
+}
+
+.no-tickets {
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation for page elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in up animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
