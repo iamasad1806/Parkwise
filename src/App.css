@@ -1,0 +1,252 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+  background-color: #0D0D0D; /* Deep black background */
+  color: #E5E5E5; /* Light grey text for contrast */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #B41BE1; /* Futuristic purple for headings */
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B41BE1;
+  border-radius: 6px;
+}
+
+button {
+  background: linear-gradient(135deg, #7A04EB, #B41BE1);
+  color: #FFF;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(180, 27, 225, 0.5);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+input, textarea {
+  background-color: #1A1A1A;
+  color: #E5E5E5;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #B41BE1;
+  box-shadow: 0 0 10px rgba(180, 27, 225, 0.5);
+  outline: none;
+}
+
+.navbar {
+  background-color: #0D0D0D;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #B41BE1;
+  letter-spacing: 1.5px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li a {
+  color: #E5E5E5;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #B41BE1;
+}
+
+h1, h2, h3 {
+  color: #B41BE1;
+  text-shadow: 0 0 10px rgba(180, 27, 225, 0.7);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.container, .card {
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(180, 27, 225, 0.3);
+}
+
+.footer {
+  background-color: #0D0D0D;
+  padding: 20px;
+  text-align: center;
+  color: #E5E5E5;
+  border-top: 2px solid #B41BE1;
+}
+
+.footer a {
+  color: #B41BE1;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #FFF;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #B41BE1, 0 0 10px #B41BE1, 0 0 15px #B41BE1;
+  }
+  50% {
+    box-shadow: 0 0 10px #7A04EB, 0 0 20px #7A04EB, 0 0 30px #7A04EB;
+  }
+  100% {
+    box-shadow: 0 0 5px #B41BE1, 0 0 10px #B41BE1, 0 0 15px #B41BE1;
+  }
+}
+
+.glowing-text {
+  animation: glow 2s infinite alternate;
+}
+
+.glowing-button {
+  animation: glow 2s infinite alternate;
+}
+
+/* Animations for Route Transitions */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* App Component */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gradual-main {
+  text-align: center;
+}
+
+/* GradualSpacing */
+.gradual-spacing {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+
+
+/* Ticket History */
+.ticket-history {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.ticket-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ticket-history li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

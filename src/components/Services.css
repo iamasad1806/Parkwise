@@ -1,0 +1,60 @@
+/* src/components/services.css */
+
+/* Import your theme colors here if you're using CSS variables, or replace the color codes directly */
+
+:root {
+  --primary-color: #2F123B;       /* Deep Purple */
+  --secondary-color: #F4EBE8;     /* Light Pink/Beige */
+  --text-primary-color: #000000;  /* Black */
+  --text-secondary-color: #C0C0C0;/* Silver/Gray */
+  --background-color: #FFFFFF;    /* White */
+  --accent-color: #C0C0C0;        /* Silver/Gray */
+}
+      
+.services-container {
+  background-color: var(--background-color);
+  color: var(--text-primary-color);
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+  font-size: 36px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.service-card {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-title {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin: 20px 0 10px;
+}
+
+.service-description {
+  font-size: 16px;
+  color: var(--text-primary-color);
+}

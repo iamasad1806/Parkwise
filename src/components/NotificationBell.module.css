@@ -1,0 +1,57 @@
+.notificationbell {
+  position: relative;
+  cursor: pointer;
+}
+
+.bellicon {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  align-items: right;
+}
+
+.drop {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: black;
+  border: 1px solid #B41BE1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+  width: 250px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dropitem {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropitem:last-child {
+  border-bottom: none;
+}
+
+.dropitem p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.dropitem button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.dropitem button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

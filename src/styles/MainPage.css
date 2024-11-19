@@ -1,0 +1,62 @@
+.main-page {
+  height: calc(100vh - 70px); /* Adjust height considering navbar */
+  display: flex;
+  justify-content: space-between; /* Distribute space between left and right */
+  align-items: center; /* Vertically center items */
+  padding: 0 20px; /* Optional: add some horizontal padding */
+  background-size: cover;
+  background-position: center;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center items in the left content */
+  text-align: left;
+}
+
+.main-heading {
+  color: #365b6d;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}
+
+.main-subheading {
+  color: #365b6d;
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.main-buttons {
+  margin-top: 30px;
+}
+
+.btn1 {
+  background-color: #365b6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.btn2 {
+  background-color: white;
+  border: #365b6d;
+  color: #365b6d;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  align-items: center; /* Vertically center the GIF */
+}
+
+.main-gif {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,90 @@
+/* Login Page Styles */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0A0B0D; /* Background color */
+}
+
+.login-container {
+  text-align: center;
+}
+
+.login-heading {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-bottom: 20px; /* Space between heading and form */
+  text-shadow: none; /* Remove any glow effect */
+}
+
+.login-form {
+  display: inline-block;
+  background-color: #1C1C1C;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  font-size: 16px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.login-form input::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #6200EA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #3700B3;
+}
+
+.google-signin-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4285F4;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-signin-button img {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.google-signin-button:hover {
+  background-color: #357AE8;
+}
+
+.error {
+  color: #F44336;
+  margin-top: 10px;
+  text-align: center;
+}
